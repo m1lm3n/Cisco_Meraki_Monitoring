@@ -120,28 +120,28 @@ function displayDevices(devices) {
             //columns would be accessed using the "col" variable assigned in the for loop
             if (col.innerHTML === 'switch') {
                 var img = document.createElement('img');
-                img.src = "/img/switch.png";
+                img.src = "./img/switch.png";
                 img.className = "icon";
                 col.appendChild(img);
                 // col.style.lineHeight = '48px';
             }
             if (col.innerHTML === 'camera') {
                 var img = document.createElement('img');
-                img.src = "/img/camera.png";
+                img.src = "./img/camera.png";
                 img.className = "icon";
                 col.appendChild(img);
                 // col.style.lineHeight = '48px';
             }
             if (col.innerHTML === 'wireless') {
                 var img = document.createElement('img');
-                img.src = "/img/wireless.png";
+                img.src = "./img/wireless.png";
                 img.className = "icon";
                 col.appendChild(img);
                 // col.style.lineHeight = '48px';
             }
             if (col.innerHTML === 'appliance') {
                 var img = document.createElement('img');
-                img.src = "/img/appliance.png";
+                img.src = "./img/appliance.png";
                 img.className = "icon";
                 col.appendChild(img);
                 // col.style.lineHeight = '48px';
