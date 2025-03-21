@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cisco Meraki FSN</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="css/css_reset.css"> -->
+    <link rel="stylesheet" href="css/viera_loader.css">
+    <link rel="stylesheet" href="css/viera_style.css">
+
+    <script type="text/javascript" src="js/viera_core.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <h1 id="main-text" class="center">Unified Meraki Dashboard</h1>
+        <!-- <button onclick="fetchDevices()">Load Devices</button> -->
+        <div class="gap"></div>
+
+         <img src="/img/Viera-Fertility-Full-Color-Logo[29032].jpg" alt="" class="logo center">
+        <!-- <h2 class="center">Viera Fertility</h2> -->
+        <div class="gap"></div>
+
+        <p class="inline-text">Organizastion ID: 615304299089514759</p>
+        <p class="inline-text">Network: L_615304299089539584</p>
+
+        <p id="count" class="center">Clients Count: 0</p>
+        <!-- <div class="gap"></div> -->
+        <div class="content">
+            <div id="loader-background">
+                <div class="loader"></div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Description</th>
+                        <th>IP</th>
+                        <th>MAC Address</th>
+                        <th>Switch Port</th>
+                        <th>VLAN</th>
+                        <th>Sent</th>
+                        <th>Received</th>
+                    </tr>
+                </thead>
+                <tbody id="clients-table-body"></tbody>
+            </table>
+        
+            <!-- <div class="header"> 
+                <div class="header-item">Description</div>
+                <div class="header-item">IP</div>
+                <div class="header-item">MAC Address</div>
+                <div class="header-item">Switch Port</div>
+                <div class="header-item">VLAN</div>
+                <div class="header-item">Sent</div>
+                <div class="header-item">Received</div>
+
+            </div> -->
+        </div>
+
+        <p id="count-top-clients" class="center">Top Clients By Usage: 0</p>
+        <div class="content">
+            <div id="loader-background-top-clients">
+                <div class="loader"></div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>MAC Address </th>
+                        <th>Up Stream</th>
+                        <th>Down Stream</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody id="top-clients-table-body"></tbody>
+            </table>
+        
+            <!-- <div class="header"> 
+                <div class="header-item">Description</div>
+                <div class="header-item">IP</div>
+                <div class="header-item">MAC Address</div>
+                <div class="header-item">Switch Port</div>
+                <div class="header-item">VLAN</div>
+                <div class="header-item">Sent</div>
+                <div class="header-item">Received</div>
+
+            </div> -->
+        </div>
+
+
+        <p id="count-top-applications" class="center">Top Applications Count: 0</p>
+        <div class="content">
+            <div id="loader-background-top-applications">
+                <div class="loader"></div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Application</th>
+                        <th>Total</th>
+                        <th>Up Stream</th>
+                        <th>Down Stream</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody id="top-applications-table-body"></tbody>
+            </table>
+        
+            <!-- <div class="header"> 
+                <div class="header-item">Description</div>
+                <div class="header-item">IP</div>
+                <div class="header-item">MAC Address</div>
+                <div class="header-item">Switch Port</div>
+                <div class="header-item">VLAN</div>
+                <div class="header-item">Sent</div>
+                <div class="header-item">Received</div>
+
+            </div> -->
+        </div>
+
+
+        <p id="count-devices" class="center">Devices Count: 0</p>
+        <div class="content">
+            <div id="loader-background-devices">
+                <div class="loader"></div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>MAC Address</th>
+                        <th>Name</th>
+                        <th>Network ID</th>
+                        <th>Product Type</th>
+                        <th>Serial</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="devices-table-body" class="devices-table-body"></tbody>
+            </table>
+        
+            <!-- <div class="header"> 
+                <div class="header-item">Description</div>
+                <div class="header-item">IP</div>
+                <div class="header-item">MAC Address</div>
+                <div class="header-item">Switch Port</div>
+                <div class="header-item">VLAN</div>
+                <div class="header-item">Sent</div>
+                <div class="header-item">Received</div>
+
+            </div> -->
+        </div>
+
+        <div class="gap"></div>
+    </main>
+</body>
+
+</html>

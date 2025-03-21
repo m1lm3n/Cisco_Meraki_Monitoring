@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100px;
+    background-color: #ecf0f1;
+    box-shadow: rgba(100, 100, 111, 0.461) 0px 7px 29px 0px;
+    font-size: 14px;
+    /* text-shadow: 1px 1px 2px wheat; */
+
+}
+
+th,
+td {
+    border: 1px solid #2c3e50;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #27ae60;
+    color: white;
+    text-align: center;
+}
+
+#clients-table-body td:nth-child(4) {
+    color: #d35400;
+}
+
+#clients-table-body td:nth-child(8) {
+    color: #2980b9;
+}
+#clients-table-body td:nth-child(7) {
+    color: #9b59b6;
+}
+
+#top-clients-table-body td:nth-child(3) {
+    color: #d35400;
+}
+#top-clients-table-body td:nth-child(4) {
+    color: #9b59b6;
+}
+#top-clients-table-body td:nth-child(5) {
+    color: #2980b9;
+}
+
+#top-applications-table-body td:nth-child(3) {
+    color: #9b59b6;
+}
+#top-applications-table-body td:nth-child(4) {
+    color: #2980b9;
+}
+#devices-table-body td:nth-child(1) {
+    color: #d35400;
+}
+#devices-table-body td:nth-child(4) {
+    line-height: 24px;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /* display: flex; */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: auto;
+}
+
+.inline-text {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content {
+    margin: auto;
+}
+
+.content {
+    width: 80%;
+    position: relative;
+    /* border: 1px solid red; */
+    /* border: 1px solid red; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-around;
+
+}
+
+.center {
+    /* text-shadow: 1px 1px 2px #2ecc709e; */
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.header-item {
+    background-color: antiquewhite;
+    height: 100%;
+    width: auto;
+}
+
+#loader-background {
+    border: 1px solid #2ecc71;
+    position: absolute;
+    width: 100%;
+    background-color: #dddddd9c;
+    height: 100%;
+    visibility: visible;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+}
+
+#loader-background-devices {
+    border: 1px solid #2ecc71;
+    position: absolute;
+    width: 100%;
+    background-color: #dddddd9c;
+    height: 100%;
+    visibility: visible;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+}
+
+#loader-background-top-clients {
+    border: 1px solid #2ecc71;
+    position: absolute;
+    width: 100%;
+    background-color: #dddddd9c;
+    height: 100%;
+    visibility: visible;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+}
+
+#loader-background-top-applications {
+    border: 1px solid #2ecc71;
+    position: absolute;
+    width: 100%;
+    background-color: #dddddd9c;
+    height: 100%;
+    visibility: visible;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+}
+
+.gap {
+    width: 100%;
+    height: 20px;
+}
+
+#count{
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+}
+#count-devices{
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#count-top-clients{
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#count-top-applications{
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#main-text{
+    background-color: #27ae60;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+}
