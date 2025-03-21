@@ -2,8 +2,8 @@ const apiKey = '***REMOVED***'; // Replace with your API key (store securely in 
 const orgID = '615304299089514759'; // Replace with your organization ID
 const netowrkID = 'L_615304299089539584'; // Replace with your organization ID
 
-const min = 3500;
-const max = 5000;
+const min = 10000;
+const max = 15000;
 
 
 async function fetchClients() {
