@@ -11,6 +11,7 @@
     <!-- <link rel="stylesheet" href="css/css_reset.css"> -->
     <link rel="stylesheet" href="css/viera_loader.css">
     <link rel="stylesheet" href="css/viera_style.css">
+    <link rel="stylesheet" href="css/viera_button.css">
 
     <script type="text/javascript" src="js/viera_core.js"></script>
 </head>
@@ -22,14 +23,64 @@
         <!-- <button onclick="fetchDevices()">Load Devices</button> -->
         <div class="gap"></div>
 
-         <img src="./img/Viera-Fertility-Full-Color-Logo[29032].jpg" alt="" class="logo center">
+        <img src="./img/Viera-Fertility-Full-Color-Logo[29032].jpg" alt="" class="logo center">
         <!-- <h2 class="center">Viera Fertility</h2> -->
         <div class="gap"></div>
 
+
+        <div class="nav center">
+            <button class="button-3" onclick="location.href='http://www.example.com'" type="button">
+                Boca</button>
+            <button class="button-3" onclick="location.href='http://www.example.com'" type="button">
+                IVFMD</button>
+
+        </div>
+
         <p class="inline-text">Organizastion ID: 615304299089514759</p>
         <p class="inline-text">Network: L_615304299089539584</p>
+        <!-- <div class="gap"></div> -->
 
-        <p id="count" class="center">Clients Count: 0</p>
+        <h3 id="network-core" class="center">Network Core Devices Count: 0</h3>
+
+        <div id="device-clients-container">
+            <!-- <div class="gap"></div>
+            <p id="device-clients-count" class="center">Device Clients Count: 0</p>
+
+            <div class="content">
+                <div id="loader-background-device-clients">
+                    <div class="loader"></div>
+                </div>
+                <div class="device-clients-table-body">
+                    <table>
+                        <thead class="sticky-head">
+                            <tr>
+                                <th>ID</th>
+                                <th>Description</th>
+                                <th>IP</th>
+                                <th>MAC Address</th>
+                                <th>Switch Port</th>
+                                <th>VLAN</th>
+                                <th>Sent</th>
+                                <th>Received</th>
+                            </tr>
+                        </thead>
+                        <tbody id="device-clients-table-body" class="scroll-table"></tbody>
+                    </table>
+                </div>
+                <!-- <div class="header"> 
+                <div class="header-item">Description</div>
+                <div class="header-item">IP</div>
+                <div class="header-item">MAC Address</div>
+                <div class="header-item">Switch Port</div>
+                <div class="header-item">VLAN</div>
+                <div class="header-item">Sent</div>
+                <div class="header-item">Received</div>
+            </div> -->
+            <!-- </div> -->
+        </div>
+
+
+        <p id="count" class="center">Network Clients Count: 0</p>
         <!-- <div class="gap"></div> -->
         <div class="content">
             <div id="loader-background">
@@ -51,7 +102,7 @@
                 </thead>
                 <tbody id="clients-table-body"></tbody>
             </table>
-        
+
             <!-- <div class="header"> 
                 <div class="header-item">Description</div>
                 <div class="header-item">IP</div>
@@ -63,6 +114,8 @@
 
             </div> -->
         </div>
+
+
 
         <p id="count-top-clients" class="center">Top Clients By Usage: 0</p>
         <div class="content">
@@ -83,7 +136,7 @@
                 </thead>
                 <tbody id="top-clients-table-body"></tbody>
             </table>
-        
+
             <!-- <div class="header"> 
                 <div class="header-item">Description</div>
                 <div class="header-item">IP</div>
@@ -115,7 +168,7 @@
                 </thead>
                 <tbody id="top-applications-table-body"></tbody>
             </table>
-        
+
             <!-- <div class="header"> 
                 <div class="header-item">Description</div>
                 <div class="header-item">IP</div>
@@ -148,7 +201,7 @@
                 </thead>
                 <tbody id="devices-table-body" class="devices-table-body"></tbody>
             </table>
-        
+
             <!-- <div class="header"> 
                 <div class="header-item">Description</div>
                 <div class="header-item">IP</div>

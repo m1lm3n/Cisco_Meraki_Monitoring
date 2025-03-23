@@ -7,9 +7,10 @@ table {
     border-collapse: collapse;
     height: 100px;
     background-color: #ecf0f1;
-    box-shadow: rgba(100, 100, 111, 0.461) 0px 7px 29px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.461) 0px 7px 29px 0px; */
     font-size: 14px;
     /* text-shadow: 1px 1px 2px wheat; */
+    font-family: "Calibri", sans-serif;
 
 }
 
@@ -20,10 +21,28 @@ td {
     text-align: left;
 }
 
+.sticky-head tr th {
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+
+
 th {
     background-color: #27ae60;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #ecf0f1;
 }
 
 #clients-table-body td:nth-child(4) {
@@ -33,6 +52,7 @@ th {
 #clients-table-body td:nth-child(8) {
     color: #2980b9;
 }
+
 #clients-table-body td:nth-child(7) {
     color: #9b59b6;
 }
@@ -40,9 +60,11 @@ th {
 #top-clients-table-body td:nth-child(3) {
     color: #d35400;
 }
+
 #top-clients-table-body td:nth-child(4) {
     color: #9b59b6;
 }
+
 #top-clients-table-body td:nth-child(5) {
     color: #2980b9;
 }
@@ -50,12 +72,15 @@ th {
 #top-applications-table-body td:nth-child(3) {
     color: #9b59b6;
 }
+
 #top-applications-table-body td:nth-child(4) {
     color: #2980b9;
 }
+
 #devices-table-body td:nth-child(1) {
     color: #d35400;
 }
+
 #devices-table-body td:nth-child(4) {
     line-height: 24px;
 }
@@ -79,6 +104,8 @@ main {
 
 .content {
     margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.461) 0px 7px 29px 0px;
+
 }
 
 .content {
@@ -168,19 +195,35 @@ main {
     align-content: center;
 }
 
+#loader-background-device-clients {
+    border: 1px solid #2ecc71;
+    position: absolute;
+    width: 100%;
+    background-color: #dddddd9c;
+    height: 100%;
+    visibility: visible;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+}
+
+.loader-background-device-clients {
+    border: 1px solid #2ecc71;
+    position: absolute;
+    width: 100%;
+    background-color: #dddddd9c;
+    height: 100%;
+    visibility: hidden;
+    /* display: flex; */
+    justify-content: center;
+    align-content: center;
+}
 .gap {
     width: 100%;
     height: 20px;
 }
 
-#count{
-    font-weight: bold;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    flex-basis: 100%;
-}
-#count-devices{
+#count {
     font-weight: bold;
     position: relative;
     width: 100%;
@@ -188,7 +231,7 @@ main {
     flex-basis: 100%;
 }
 
-#count-top-clients{
+#count-devices {
     font-weight: bold;
     position: relative;
     width: 100%;
@@ -196,7 +239,7 @@ main {
     flex-basis: 100%;
 }
 
-#count-top-applications{
+#count-top-clients {
     font-weight: bold;
     position: relative;
     width: 100%;
@@ -204,7 +247,23 @@ main {
     flex-basis: 100%;
 }
 
-#main-text{
+#count-top-applications {
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#device-clients-count {
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#main-text {
     background-color: #27ae60;
     color: white;
     padding-top: 20px;
@@ -212,13 +271,54 @@ main {
     margin: 0px;
 }
 
-.icon{
+.icon {
     width: 20px;
     height: 20px;
     margin-left: 10px;
 }
 
-.logo{
+.logo {
     height: 100px;
     width: auto;
+}
+
+.device-clients-table-body {
+    height: auto;
+    overflow: auto;
+    width: 100%;
+}
+
+.scroll-table *{
+    font-size: 12px;
+    padding: 2px;
+    font-family: "Calibri", sans-serif;
+}
+.device-clients-table{
+    height: auto;
+    overflow: auto;
+    width: 100%;
+
+}
+.scroll-table td:nth-child(4) {
+    color: #d35400;
+}
+
+.scroll-table td:nth-child(8) {
+    color: #2980b9;
+}
+
+.scroll-table td:nth-child(7) {
+    color: #9b59b6;
+}
+
+#device-clients-container {
+    width: 100%;
+}
+
+.device-clients-count {
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
 }
