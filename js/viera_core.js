@@ -530,11 +530,8 @@ function displayTopApplications(devices) {
 
 
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     fetchNetworkCount();
-
     fetchClients();
     fetchDeviceClients();
     fetchDevices();
