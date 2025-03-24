@@ -238,16 +238,16 @@ function displayDeviceClients(devicesClients, devices) {
                 <td>${device.mac}</td>
                 <td>${device.switchport}</td>
                 <td>${device.vlan}</td>
-                <td>${device.usage.sent}</td>
                 <td>${device.usage.recv}</td>
+                <td>${device.usage.sent}</td>
             </tr>`;
             tbody.innerHTML += row;
 
         });
 
         element.textContent = devices.name + ' ' + '[' + devices.productType + ']' + ' ' + 'Device Clients Count:' + ' ' + devicesClients.length;
-        if (devicesClients.length > 25) {
-            tbody.style.height = '500px';
+        if (devicesClients.length > 14) {
+            tbody.style.height = '300px';
         }
     }
     else {
@@ -283,7 +283,7 @@ function displayDeviceClients(devicesClients, devices) {
         thead.className = "sticky-head";
         const headerRow = document.createElement("tr");
         const headers = [
-            "ID", "Description", "IP", "MAC Address", "Switch Port", "VLAN", "Sent", "Received"
+            "ID", "Description", "IP", "MAC Address", "Switch Port", "VLAN", "KILOBIT Sent", "KILOBIT Received"
         ];
 
         headers.forEach(text => {
