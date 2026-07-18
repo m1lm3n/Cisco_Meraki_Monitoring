@@ -11,8 +11,8 @@ async function fetchNetworkCount() {
 
     var deviceSerial = 'Q2KY-SV6K-F3SL';
 
-    var urlNetworkDevices = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
-    const url = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1/organizations/${orgID}/devices/availabilities`;
+    var urlNetworkDevices = `http://localhost:8080/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
+    const url = `http://localhost:8080/https://api.meraki.com/api/v1/organizations/${orgID}/devices/availabilities`;
     // https://api.meraki.com/api/v1/organizations/615304299089514759/devices/availabilities
     try {
         const response = await fetch(url, {
@@ -34,7 +34,7 @@ async function fetchNetworkCount() {
         devices.forEach(async device => {
             if (device.productType == 'appliance') {
                 deviceSerial = device.serial;
-                urlNetworkDevices = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
+                urlNetworkDevices = `http://localhost:8080/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
 
                 const response = await fetch(urlNetworkDevices, {
                     method: 'GET',
@@ -72,7 +72,7 @@ async function fetchClients() {
     const tableBody = document.getElementById('loader-background');
     tableBody.style.visibility = "visible";
 
-    const url = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1/networks/${netowrkID}/clients`;
+    const url = `http://localhost:8080/https://api.meraki.com/api/v1/networks/${netowrkID}/clients`;
     // https://api.meraki.com/api/v1/organizations/615304299089514759/devices/availabilities
     try {
         const response = await fetch(url, {
@@ -136,8 +136,8 @@ async function fetchDeviceClients() {
 
     var deviceSerial = 'Q2KY-SV6K-F3SL';
 
-    var urlNetworkDevices = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
-    const url = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1/organizations/${orgID}/devices/availabilities`;
+    var urlNetworkDevices = `http://localhost:8080/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
+    const url = `http://localhost:8080/https://api.meraki.com/api/v1/organizations/${orgID}/devices/availabilities`;
     // https://api.meraki.com/api/v1/organizations/615304299089514759/devices/availabilities
     try {
         const response = await fetch(url, {
@@ -159,7 +159,7 @@ async function fetchDeviceClients() {
         devices.forEach(async device => {
             if (device.productType == 'switch') {
                 deviceSerial = device.serial;
-                urlNetworkDevices = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
+                urlNetworkDevices = `http://localhost:8080/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
 
                 const response = await fetch(urlNetworkDevices, {
                     method: 'GET',
@@ -181,7 +181,7 @@ async function fetchDeviceClients() {
             }
             else if (device.productType == 'wireless') {
                 deviceSerial = device.serial;
-                urlNetworkDevices = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
+                urlNetworkDevices = `http://localhost:8080/https://api.meraki.com/api/v1/devices/${deviceSerial}/clients`;
 
                 const response = await fetch(urlNetworkDevices, {
                     method: 'GET',
@@ -342,7 +342,7 @@ async function fetchDevices() {
     const tableBody = document.getElementById('loader-background-devices');
     tableBody.style.visibility = "visible";
 
-    const url = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1/organizations/${orgID}/devices/availabilities`;
+    const url = `http://localhost:8080/https://api.meraki.com/api/v1/organizations/${orgID}/devices/availabilities`;
     // https://api.meraki.com/api/v1/organizations/615304299089514759/devices/availabilities
     try {
         const response = await fetch(url, {
@@ -431,7 +431,7 @@ async function fetchTopClients() {
     const tableBody = document.getElementById('loader-background-top-clients');
     tableBody.style.visibility = "visible";
 
-    const url = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1//organizations/${orgID}/summary/top/clients/byUsage`;
+    const url = `http://localhost:8080/https://api.meraki.com/api/v1//organizations/${orgID}/summary/top/clients/byUsage`;
     // https://api.meraki.com/api/v1/organizations/615304299089514759/devices/availabilities
 
     try {
@@ -482,7 +482,7 @@ async function fetchTopApplications() {
     const tableBody = document.getElementById('loader-background-top-applications');
     tableBody.style.visibility = "visible";
 
-    const url = `https://fast-thicket-18722-58f838c326e4.herokuapp.com/https://api.meraki.com/api/v1//organizations/${orgID}/summary/top/applications/byUsage`;
+    const url = `http://localhost:8080/https://api.meraki.com/api/v1//organizations/${orgID}/summary/top/applications/byUsage`;
     // https://api.meraki.com/api/v1/organizations/615304299089514759/devices/availabilities
 
     try {
