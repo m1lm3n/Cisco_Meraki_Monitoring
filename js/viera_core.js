@@ -1,4 +1,3 @@
-const apiKey = '***REMOVED***'; // Replace with your API key (store securely in a backend)
 const orgID = '615304299089514759'; // Replace with your organization ID
 const netowrkID = 'L_615304299089539584'; // Replace with your organization ID
 
